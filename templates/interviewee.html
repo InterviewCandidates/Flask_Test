@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interviewees</title>
+</head>
+<body>
+    <div>
+        <table id="interviewee_table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {%  for interviewee in interviewees %}
+
+                        <tr>
+                            <td>{{ interviewee.id }}</td>
+                            <td>{{ interviewee.name }}</td>
+                        </tr>
+
+                {%  endfor %}
+
+                </tbody>
+            </table>
+    </div>
+
+</body>
+</html>
